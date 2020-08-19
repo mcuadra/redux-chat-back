@@ -35,7 +35,7 @@
           run: |
             docker tag back ${{ secrets.DOCKER_USER }}/back:${{ github.sha }}
             docker tag back ${{ secrets.DOCKER_USER }}/back:latest
-            name: Push
+        - name: Push
           run: |
             docker push ${{ secrets.DOCKER_USER }}/back:${{ github.sha }}
             docker push ${{ secrets.DOCKER_USER }}/back:latest   
