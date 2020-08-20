@@ -40,3 +40,4 @@
             docker push ${{ secrets.DOCKER_USER }}/back:${{ github.sha }}
             docker push ${{ secrets.DOCKER_USER }}/back:latest   
             
+            
