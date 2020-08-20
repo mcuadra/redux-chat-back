@@ -59,6 +59,6 @@
           id: task-def
           uses: aws-actions/amazon-ecs-render-task-definition@v1
           with:
-            task-definition: task-definition.json
-            container-name: app
+            task-definition:  first-run-task-definition:2.json
+            container-name: sample-app
             image: ${{ steps.build-image.outputs.image }}
